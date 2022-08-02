@@ -45,7 +45,7 @@ const verCard = (data) => {
 
         <div class="d-flex justify-content-between align-items-center">
           <div class="btn-group">
-            <button type="button" class="btn btn-danger">
+            <button onclick="setear('${element.name}','${element.image}','${element.location.name}','${element.status}','${element.origin.name}','${element.gender}')" type="button" class="btn btn-danger">
               View
             </button>
             
@@ -57,3 +57,21 @@ const verCard = (data) => {
   });
   document.getElementById("card").innerHTML = card;
 };
+
+/* Cuando haga click en el boton ejecutame esa funcion y traeme tal informacion QUE PASO POR PARAMETROS */
+
+function setear(nombre, imagen, locacion, status, origen, gender) {
+  window.location.href =
+    "../descripcion.html?nombre=" +
+    nombre +
+    "&" +
+    imagen +
+    "&" +
+    locacion +
+    "&" +
+    status +
+    "&" +
+    origen +
+    "&" +
+    gender;
+}
