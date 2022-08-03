@@ -79,6 +79,15 @@
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
       }
+      .card {
+        box-shadow: rgba(0, 0, 0, 0.7) 0px 7px 20px;
+        /* transition: transform 1s; */
+        transition: filter, transform 1s; /* Implenmentando la "," puedo aplicar filter en el transition */
+        filter: grayscale(0.8); /* Color tono gris */
+      }
+      .card:hover {
+        filter: grayscale(0);
+      }
     </style>
   </head>
   <!-- Boceto -->
