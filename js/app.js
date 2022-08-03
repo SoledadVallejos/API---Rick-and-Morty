@@ -62,7 +62,7 @@ const verCard = (data) => {
 
 function setear(nombre, imagen, locacion, status, origen, gender) {
   window.location.href =
-    "../descripcion.html?nombre=" +
+    "./descripcion.html?nombre=" +
     nombre +
     "&" +
     imagen +
